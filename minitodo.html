@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="minitodo.css">
+    <script src="https://kit.fontawesome.com/a11c77c502.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <title>Todo List</title>
+<link rel="stylesheet" href="index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="robots" content="none,noarchive"/>
+</head>
+
+<body>
+    <div class="main row container-fluid" id="main">
+        <div class="col-12 d-flex flex-row" id="col-12">
+            <!-- part1--starts -->
+            <div class="part-1">
+
+                <!-- for entering the name -->
+                <div class="ele1" id="e1">
+                    <input type="text" id="proname" autocomplete="off" name="text" placeholder="Enter your Name" />
+                    <button class="probtn" id="b1" onclick="add()">ADD</button>
+                    <h1 id="heading" style="text-align: center;text-decoration: underline;text-transform: capitalize;"></h1>
+                </div>
+                <!-- for today tasks -->
+                <div class="today-task-con d-flex flex-row " id="sectiontodaytask">
+                    <div class="icon">
+                        <i class="fa-solid fa-list-ul fa-beat" style="color: #fff;"></i>
+                    </div>
+                    <h2 class="left-headings">Today Tasks</h2>
+                </div>
+                <!-- for pending tasks -->
+                <div class="today-task-con d-flex flex-row " id="sectiontodaytask">
+                    <div class="icon">
+                        <i class="fa-solid fa-list-check fa-beat" style="color: #fff;"></i>
+                    </div>
+                    <h2 class="left-headings">Pending Tasks</h2>
+                </div>
+                <!-- for importent tasks -->
+                <div class="today-task-con d-flex flex-row " id="sectiontodaytask">
+                    <div class="icon">
+                        <i class="fa-regular fa-star fa-beat fa-lg" style="color: #fff;"></i>
+                    </div>
+                    <h2 class="left-headings">Importent Tasks</h2>
+                </div>
+                <!-- for calander -->
+                <div class="today-task-con d-flex flex-row " id="sectiontodaytask">
+                    <div class="icon">
+                        <i class="fa-solid fa-list-check fa-beat" style="color: #fff;"></i>
+                    </div>
+                    <h2 class="left-headings">Team tasks</h2>
+                </div>
+
+                <div class="flex-space"> </div>
+
+                <div class="today-task-con d-flex flex-row " id="sectiontodaytask">
+                    <div class="icon">
+                        <i class="fa-solid fa-address-card fa-bounce fa-xl" style="color: #fff;"></i>
+                    </div>
+                    <h2 class="left-headings">personal tasks</h2>
+                </div>
+
+            </div>
+            <!-- part1--ends -->
+
+            <!-- part2 starts---------------------------------------------------------------- -->
+            <div class="part-2">
+                <h1 class="main-heading">ToDo'S</h1>
+                <div class="add-your-task" id="ok">
+                    <input type="text" id="addingtask" autocomplete="off" class="adding-task" placeholder="Enter your task " />
+                    <button class="add-task-btn" onclick="adding()">Add </button>
+                </div>
+
+                <h1 class="tobe-done-heading ol">to be done tasks</h1>
+
+                <div class="tobecon">
+                    <ul class="container-fortasks" id="matask">
+                        <!-- <li>
+                    <div class="taskmain d-flex flex-row justify-content-between">
+                    <div class="d-flex flex-row">
+                        <input type="checkbox" name="click" id="checkboxclick">
+                        <h5 class="text">Lorem ipsum dolor sit amet.</h5>
+                    </div>  
+                    <div class="icon oo">
+                        <i class="fa-regular fa-trash-can" style="color: #000000;"></i>
+                    </div> 
+                </div>                                                                                      
+                </li> -->
+                    </ul>
+                </div>
+                <h1 class="tobe-done-heading ol">completed</h1>
+                <div class="completedcon">
+
+                    <ul class="container-fortasks" id="completedt">
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- part2 ends---------------------------------------------------------------- -->
+        </div>
+    </div>
+    <script src="minitodo.js"></script>
+<script src="index.js"></script>
+</body>
+
+</html>
